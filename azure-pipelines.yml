@@ -23,3 +23,9 @@ steps:
     downloadType: 'single'
     artifactName: 'test'
     downloadPath: '$(System.ArtifactsDirectory)'
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'test'
+    downloadPath: '$(System.ArtifactsDirectory)'
